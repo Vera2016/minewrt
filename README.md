@@ -1,3 +1,13 @@
+## openwrt just for myself / 自己的openwrt
+custom-packages from : 
+1. https://github.com/sirpdboy
+2. https://github.com/coolsnowwolf
+3. https://github.com/Lienol
+4. https://github.com/xiaorouji
+5. https://github.com/chenmozhijin
+6. https://github.com/lisaac
+7. https://github.com/pymumu
+8. https://github.com/jerrykuku
 ![OpenWrt logo](include/logo.png)
 
 OpenWrt Project is a Linux operating system targeting embedded devices. Instead
