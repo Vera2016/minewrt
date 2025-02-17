@@ -91,6 +91,11 @@ case "$board" in
 		addr=$(mtd_get_mac_binary "Odm" 0x81)
 		[ "$PHYNBR" = "1" ] && macaddr_add $addr 3 > /sys${DEVPATH}/macaddress
 		;;
+	cudy,tr3000*)
+		addr=$(mtd_get_mac_binary bdinfo 0xde00)
+		[ "$PHYNBR" = "0" ] && echo "$addr" > /sys${DEVPATH}/macaddress
+		[ "$PHYNBR" = "1" ] && macaddr_setbit_la $(macaddr_add $addr 1) > /sys${DEVPATH}/macaddress
+		;;
 	glinet,gl-mt6000|\
 	glinet,gl-x3000|\
 	glinet,gl-xe3000)
